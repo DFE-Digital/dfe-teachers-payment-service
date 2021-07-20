@@ -196,30 +196,31 @@ describe Admin::ClaimsHelper do
 
       it "returns incomplete task status tag" do
         expect(task_status_tag).to match("Incomplete")
-        expect(task_status_tag).to match("govuk-tag app-task-list__task-completed govuk-tag--grey")
+        expect(task_status_tag).to match("govuk-tag app-task-list__task-completed")
+        expect(task_status_tag).to match("govuk-tag--grey")
       end
     end
 
-    context "with full match task" do
+    context "with claim verifier matched all task" do
       let(:tasks_arg) do
         [
           build(
             :task,
             claim_verifier_match: :all,
             name: "employment",
-            passed: nil
+            passed: true
           )
         ]
       end
 
-      it "returns full match task status tag" do
-        expect(task_status_tag).to match("Full match")
+      it "returns passed status tag" do
+        expect(task_status_tag).to match("Passed")
         expect(task_status_tag).to match("govuk-tag app-task-list__task-completed")
-        expect(task_status_tag).to match("govuk-tag--green")
+        expect(task_status_tag).to match("govuk-tag--strong-green")
       end
     end
 
-    context "with partial match task" do
+    context "with claim verifier matched any task" do
       let(:tasks_arg) do
         [
           build(
@@ -238,7 +239,7 @@ describe Admin::ClaimsHelper do
       end
     end
 
-    context "with no match task" do
+    context "with claim verified matched none task" do
       let(:tasks_arg) do
         [
           build(
