@@ -39,6 +39,7 @@ The format is based on [Keep a Changelog]
     itt/assessment only/overseas recognition qualification in?' page validation
   - Update 'Do you teach chemistry/foreign languages/mathematics/physics now?'
     page validation
+  - Add client for Ordnanace Survey to make API calls for address/postcode data
 
 ## [Release 091] - 2021-06-24
 
