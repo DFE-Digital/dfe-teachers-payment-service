@@ -39,6 +39,8 @@ The format is based on [Keep a Changelog]
     itt/assessment only/overseas recognition qualification in?' page validation
   - Update 'Do you teach chemistry/foreign languages/mathematics/physics now?'
     page validation
+  - Show admin claim identity confirmation task questions when claim verifier
+    identity not fully matched
 
 ## [Release 091] - 2021-06-24
 
@@ -46,7 +48,7 @@ The format is based on [Keep a Changelog]
   - Add 'What account do you want the money paid into?' screen
 - ECP policy
   - Add subject cohort ineligibility to eligibility
-  - Update content for'How many higher education courses did you take a student
+  - Update content for 'How many higher education courses did you take a student
     loan out for?' screen
   - Update content for 'Did you take out a Postgraduate Masters Loan?' screen
   - Update content for 'Did you take out a Postgraduate Doctoral Loan?' screen
